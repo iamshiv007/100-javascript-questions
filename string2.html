@@ -14,9 +14,208 @@
       content="string practice, string best questions for practice, Best practice questions for string"
     />
     <meta name="author" content="Shivraj Gurjar" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
   <body>
     <h1 style="text-align: center">Hundred questions of String</h1>
     <a href="/">Back to home</a>
+
+    <div>
+      <!-- 11 -->
+      <div>
+        <p style="font-size: larger">Q.11 Remove extra spaces from string?</p>
+        <pre>
+          <code style="font-size: large;">
+            function removeExtraSpaces(string){
+              return string.replace(/\s+/g, ' ') // regular expration to remove extra spaces from string
+            }
+          
+            console.log(removeExtraSpaces("Hello    this is Shivraj")) // Hello this is Shivraj
+          </code>
+        </pre>
+      </div>
+      <!-- 12 -->
+      <div>
+        <p style="font-size: larger">Q.12 Convert string to upper case?</p>
+        <pre>
+          <code style="font-size: large;">
+            function convertToUpperCase(string){
+              return string.toUpperCase() // convert to upper case
+            }
+          
+            console.log(convertToUpperCase("Hello this is Shivraj")) // HELLO THIS IS SHIVRAJ
+        </code>
+        </pre>
+      </div>
+      <!-- 13 -->
+      <div>
+        <p style="font-size: larger">Q.13 Convert string to lower case?</p>
+        <pre>
+          <code style="font-size: large;">
+            function convertToLowerCase(string){
+              return string.toLowerCase() // convert to lower case
+            }
+            
+            console.log(convertToLowerCase("Hello this is Shivraj")) // hello this is shivraj
+          </code>
+        </pre>
+      </div>
+      <!-- 14 -->
+      <div>
+        <p style="font-size: larger">Q.14 How to reverse a string?</p>
+        <pre>
+          <code style="font-size: large;">
+            function reverseString(string) {
+              const array = string.split("").reverse() // string converted to array and reversed
+              const newString = array.join("") // array element joind in to string
+              return newString
+            }
+          
+            console.log(reverseString("Hello this is Shivraj")) // jarvihS si siht olleH
+        </code>
+        </pre>
+      </div>
+      <!-- 15 -->
+      <div>
+        <p style="font-size: larger">
+          Q.15 How to reverse every word in a sentense?
+        </p>
+        <pre>
+          <code style="font-size: large;">
+            function reverseEveryWord(string){
+              const array  = string.split(" ") // string converted to array
+              const  newArray = array.map((ele) => {
+                  const newEle = ele.split("").reverse() // ele converted to array and reversed
+                  return newEle.join("") // ele converted to string
+              })
+              const newString = newArray.join(" ") // array element joind in to string
+              return newString
+            }
+                    
+            console.log(reverseEveryWord("Hello this is Shivraj")) // olleH siht si jarvihS
+        </code>
+        </pre>
+      </div>
+      <!-- 16 -->
+      <div>
+        <p style="font-size: larger">
+          Q.16 Replace count of word in place of it?
+        </p>
+        <pre>
+          <code style="font-size: large;">
+            function reverseEveryWord(string){
+              const array  = string.split(" ") // string converted to array
+              const  newArray = array.map((ele) => {
+                  return ele.length // length of word
+              })
+              const newString = newArray.join(" ") // array element joind in to string
+              return newString
+            }
+                    
+            console.log(reverseEveryWord("Hello this is Shivraj")) // 5 4 2 7
+        </code>
+        </pre>
+      </div>
+      <!-- 17 -->
+      <div>
+        <p style="font-size: larger">Q.17 Reverse word sequence of sentense?</p>
+        <pre>
+          <code style="font-size: large;">
+            function reverseEveryWord(string) {
+              const array = string.split(" ") // string converted to array
+              const newArray = array.reverse()
+              const newString = newArray.join(" ") // array element joind in to string
+              return newString
+            }
+          
+            console.log(reverseEveryWord("Hello this is Shivraj")) // Shivraj is this Hello
+         </code>
+        </pre>
+      </div>
+      <!-- 18 -->
+      <div>
+        <p style="font-size: larger">
+          Q.18 Reverse every letter of sentence from center?
+        </p>
+        <pre>
+          <code style="font-size: large;">
+            function reverseStringFromCenter(string) {
+              const array = string.split("") // string converted to array
+              const arrayLength = array.length // array length
+              const halfFirst = array.slice(0, arrayLength / 2).reverse().join("") // first half part
+              const halfSecond = array.slice(arrayLength / 2 + 0.5, arrayLength).reverse().join("") // second half part
+              // check if array length even or odd
+              if (arrayLength % 2 === 0) {
+                  return halfFirst + halfSecond
+              } else {
+                  const centerLength = array[arrayLength / 2 - 0.5]
+                  return halfFirst + centerLength + halfSecond
+              }
+            }
+          
+            console.log(reverseStringFromCenter("abcdefgh")) // dcbahgfe
+            console.log(reverseStringFromCenter("abcdefghi")) // dcbaeihgf
+         </code>
+        </pre>
+      </div>
+      <!-- 19 -->
+      <div>
+        <p style="font-size: larger">Q.19 Get half first part of string?</p>
+        <pre>
+          <code style="font-size: large;">
+            function getHalfFirst(string) {
+              const array = string.split("") // string converted to array
+              const arrayLength = array.length // array length
+              const halfFirst = array.slice(0, arrayLength / 2).join("") // first half part
+              return halfFirst
+            }
+          
+            console.log(getHalfFirst("abcdefgh")) // abcd
+            console.log(getHalfFirst("abcdefghi")) // abcd
+         </code>
+        </pre>
+      </div>
+      <!-- 20 -->
+      <div>
+        <p style="font-size: larger">Q.20 Get half second part of string?</p>
+        <pre>
+          <code style="font-size: large;">
+            function reverseEveryWord(string) {
+              const array = string.split("") // string converted to array
+              const arrayLength = array.length // array length
+              const halfFirst = array.slice(arrayLength / 2 + 0.5, arrayLength).join("") // second half part
+              return halfFirst
+            }
+          
+            console.log(reverseEveryWord("abcdefgh")) // efgh
+            console.log(reverseEveryWord("abcdefghi")) // fghi
+         </code>
+        </pre>
+      </div>
+    </div>
+
+    <div style="margin: 10px; display: flex; justify-content: end">
+      <a
+        href="/"
+        style="
+          font-size: 22px;
+          color: white;
+          font-weight: bold;
+          font-family: 'Courier New', Courier, monospace;
+          text-decoration: none;
+          padding: 5px 20px;
+          background: blue;
+          border-radius: 4px;
+        "
+        >Next</a
+      >
+    </div>
   </body>
 </html>

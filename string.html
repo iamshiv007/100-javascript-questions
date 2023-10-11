@@ -27,10 +27,11 @@
     <h1 style="text-align: center">Hundred questions of String</h1>
     <a href="/">Back to home</a>
 
-    <!-- 1 -->
     <div>
-      <p style="font-size: larger">Q.1 Find last word of string?</p>
-      <pre>
+      <!-- 1 -->
+      <div>
+        <p style="font-size: larger">Q.1 Find last word of string?</p>
+        <pre>
           <code style="font-size: large;">
             function findLastWord (string){
                 const array = string.split(" ") // convert string to array
@@ -43,11 +44,11 @@
             console.log(findLastWord("Going to Mars")) // Mars
         </code>
     </pre>
-    </div>
-    <!-- 2 -->
-    <div>
-      <p style="font-size: larger">Q.2 Find last character of string ?</p>
-      <pre>
+      </div>
+      <!-- 2 -->
+      <div>
+        <p style="font-size: larger">Q.2 Find last character of string ?</p>
+        <pre>
           <code style="font-size: large;">
             function findLastChar (string){
                 const stringLength = string.length // length of string
@@ -59,11 +60,11 @@
             console.log(findLastChar("Going to Mars")) // s
         </code>
     </pre>
-    </div>
-    <!-- 3 -->
-    <div>
-      <p style="font-size: larger">Q.3 Find length of string ?</p>
-      <pre>
+      </div>
+      <!-- 3 -->
+      <div>
+        <p style="font-size: larger">Q.3 Find length of string ?</p>
+        <pre>
             <code style="font-size: large;">
             function findStringLength (string){
                 const stringLength = string.length // Get string length
@@ -73,13 +74,13 @@
             console.log(findStringLength("Going to Mars to beat Thanos")) // 28
           </code>
       </pre>
-    </div>
-    <!-- 4 -->
-    <div>
-      <p style="font-size: larger">
-        Q.4 Find length of string without count space ?
-      </p>
-      <pre>
+      </div>
+      <!-- 4 -->
+      <div>
+        <p style="font-size: larger">
+          Q.4 Find length of string without count space ?
+        </p>
+        <pre>
             <code style="font-size: large;">
                 function stringLength (string){
                     const newString = string.replace(/\s/g, '') // all whitespace removed
@@ -90,13 +91,13 @@
                 console.log(stringLength("Going to Mars to beat Thanos")) // 23
           </code>
       </pre>
-    </div>
-    <!-- 5 -->
-    <div>
-      <p style="font-size: larger">
-        Q.5 Find length of string without count a specified letter or word ?
-      </p>
-      <pre>
+      </div>
+      <!-- 5 -->
+      <div>
+        <p style="font-size: larger">
+          Q.5 Find length of string without count a specified letter or word ?
+        </p>
+        <pre>
             <code style="font-size: large;">
                function stringLength(string, string2) {
                    // Use regular expression to replace all occurrences of the specified letter or word
@@ -109,14 +110,14 @@
                console.log(stringLength("Going to Mars", "Going")) // 8
           </code>
       </pre>
-    </div>
-    <!-- 6 -->
-    <div>
-      <p style="font-size: larger">
-        Q.6 How can I determine whether to use 'a' or 'an' before a word in
-        JavaScript?
-      </p>
-      <pre>
+      </div>
+      <!-- 6 -->
+      <div>
+        <p style="font-size: larger">
+          Q.6 How can I determine whether to use 'a' or 'an' before a word in
+          JavaScript?
+        </p>
+        <pre>
             <code style="font-size: large;">
               const vowels = ["a", "e", "i", "o", "u"]
 
@@ -134,13 +135,13 @@
               console.log(chooseArticle("Iconic")) // an
           </code>
       </pre>
-    </div>
-    <!-- 7 -->
-    <div>
-      <p style="font-size: larger">
-        Q.7 How can I capitalize the first letter of a string in JavaScript?
-      </p>
-      <pre>
+      </div>
+      <!-- 7 -->
+      <div>
+        <p style="font-size: larger">
+          Q.7 How can I capitalize the first letter of a string in JavaScript?
+        </p>
+        <pre>
           <code style="font-size: large;">
             function capitalizeFirstLetter(string) {
               const firstLetter = string.charAt(0).toUpperCase() // Access first letter and converted into capital letter
@@ -153,13 +154,13 @@
           console.log(capitalizeFirstLetter("hi there")) // Hi there
         </code>
     </pre>
-    </div>
-    <!-- 8 -->
-    <div>
-      <p style="font-size: larger">
-        Q.8 Convert all first letter of sentence in capital case?
-      </p>
-      <pre>
+      </div>
+      <!-- 8 -->
+      <div>
+        <p style="font-size: larger">
+          Q.8 Convert all first letter of sentence in capital case?
+        </p>
+        <pre>
         <code style="font-size: large;">
           function capitalizeFirstLetter(string){
             const array = string.split(" ") // string to array
@@ -178,13 +179,13 @@
         console.log(capitalizeFirstLetter("hi there i am shivraj gurjar")) // Hi There I Am Shivraj Gurjar
         </code>
       </pre>
-    </div>
-    <!-- 9 -->
-    <div>
-      <p style="font-size: larger">
-        Q.9 Capitalize the first letter of the first word in every sentence?
-      </p>
-      <pre>
+      </div>
+      <!-- 9 -->
+      <div>
+        <p style="font-size: larger">
+          Q.9 Capitalize the first letter of the first word in every sentence?
+        </p>
+        <pre>
         <code style="font-size: large;">
           function capitalizeFirstLetterOfSentences(string){
             const array = string.split(". ") // break all sentences in to array
@@ -203,14 +204,14 @@
         console.log(capitalizeFirstLetterOfSentences("hi there i am shivraj gurjar. i am 20 years old")) // Hi there i am shivraj gurjar. I am 20 years old
         </code>
       </pre>
-    </div>
-    <!-- 10 -->
-    <div>
-      <p style="font-size: larger">
-        Q.10 Convert all letter in to lowercase excluding first letter of
-        sentence?
-      </p>
-      <pre>
+      </div>
+      <!-- 10 -->
+      <div>
+        <p style="font-size: larger">
+          Q.10 Convert all letter in to lowercase excluding first letter of
+          sentence?
+        </p>
+        <pre>
         <code style="font-size: large;">
           function capitalizeFirstLetterOfSentences(string){
             const array = string.split(". ") // break all sentences in to array
@@ -229,6 +230,7 @@
         console.log(capitalizeFirstLetterOfSentences("Hi There i Am Shivraj gurjar. I Am 20 years Old")) // Hi there i am shivraj gurjar. I am 20 years old
         </code>
       </pre>
+      </div>
     </div>
 
     <div style="margin: 10px; display: flex; justify-content: end">
